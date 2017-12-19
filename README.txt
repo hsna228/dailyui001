@@ -5,10 +5,6 @@ DAILY UI - #001 Sign Up
 AUTHOR:
 DESIGNED & DEVELOPED by Aya Hoshino
 
-Website: http://freehtml5.co/
-Dribble: https://dribble.com/shospnhay
-Facebook: https://www.facebook.com/jas.lol2
-
 
 CREDITS:
 
