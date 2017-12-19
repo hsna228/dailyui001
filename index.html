@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+	<head >
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DAILY UI &mdash; #001 Sign Up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="DAILY UI Challenge &mdash; #001 Sign Up" />
+	<meta name="keywords" content="daily ui, sign up page" />
+	<meta name="author" content="Aya Hoshino" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	DAILY UI #001 
+	DESIGNED & DEVELOPED by Aya Hoshino
+		
+	Email: 			shosonhay@gmail.com
+	Facebook: 		https://www.facebook.com/jas.lol2
+	Dribble:		https://dribble.com/shospnhay
+
+	//////////////////////////////////////////////////////
+	 -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Font-->
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Dosis" rel="stylesheet">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div id="signup-page">
+			<header id="signup-header" role="banner">
+				<div class="container">
+					<div class="row">
+						<div class="header-inner">
+							<h1 class="header-inner-title">
+								<a href="index.html">EShopping</a>
+							</h1>
+							<nav class="header-inner-items" role="navigation">
+								<ul>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Products</a></li>
+									<li class="icon"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+									<li class="icon"><a href="#"><i class="fa fa-user-circle-o"></i></a></li>
+								</ul>
+							</nav>
+						</div> <!--// .header-inner -->
+					</div>
+				</div>  <!--// .container -->
+			</header> <!--// #signup-header -->
+	
+
+			<aside id="signup-hero" clsas="js-fullheight">
+				<div class="flexslider js-fullheight">
+					<ul class="slides bg-img">
+						<li>
+							<div id="signup" class="container">
+								<div class="col-md-12 signup-containts-area text-center js-fullheight slider-text">
+									<div class="signup-containts-area-inner">
+										<div class="signup-box">
+											<h3 class="signup-box-title">Sign Up</h3>
+											<div class="signup-form">
+												<input type="text" class="form-control" placeholder="Email" required>
+												<input type="text" class="form-control" placeholder="Password" required>
+												<p>Already have an account? <span class="link-text custom-navigation flex-next">Sign In</span></p>
+											</div> <!--// .signup-form -->
+											<button id="signUpBtn" class="btn btn-primary">Sign Up</button>
+										</div> <!--// .signup-box -->
+									</div> <!--// .signup-containts-area-inner -->
+								</div> <!--// .signup-containts-area -->
+							</div> <!--// #signup -->
+							<div id="successMsg" class="container hide">
+								<div class="col-md-12 signup-containts-area text-center js-fullheight slider-text">
+									<div class="signup-containts-area-inner">
+										<div class="signup-box">
+											<div class="success-msg">
+												<i class="fa fa-check-circle"></i>
+												<p>Successfully Resistered</p>
+											</div>
+										</div> <!--// .signup-box -->
+									</div> <!--// .signup-containts-area-inner -->
+								</div> <!--// .signup-containts-area -->
+							</div> <!--// #successMsg -->
+						</li>
+						<li>
+							<div id="signin" class="container">
+								<div class="col-md-12 signup-containts-area text-center js-fullheight slider-text">
+									<div class="signup-containts-area-inner">
+										<div class="signup-box">
+											<h3 class="signup-box-title">Sign In</h3>
+											<div class="signup-form">
+												<input type="text" class="form-control" placeholder="Email">
+												<div class="form-with-link">
+													<input type="text" class="form-control" placeholder="Password" required>
+													<span id="recoverLink" class="link-text">Foget?</span>
+												</div> <!--// .form-with-link -->
+												<p>Don't have an account? <span class="link-text custom-navigation flex-prev">Sign Up</span></p>
+											</div> <!--// .signup-form -->
+											<button id="submitBtn" class="btn btn-primary">Submit</button>
+										</div> <!--// .signup-box -->
+									</div> <!--// .signup-containts-area-inner -->
+								</div> <!--// .signup-containts-area -->
+							</div> <!--// #signin -->
+							<div id="recover" class="container hide">
+								<div class="col-md-12 signup-containts-area text-center js-fullheight slider-text">
+									<div class="signup-containts-area-inner">
+										<div class="signup-box">
+											<h3 class="signup-box-title">Reset Password</h3>
+											<div class="signup-form">
+												<input type="text" class="form-control" placeholder="Registerd Email">
+											</div> <!--// .signup-form -->
+											<div>
+												<button id="backBtn" class="btn btn-default">Back</button>
+												<button id="sendEmailBtn" class="btn btn-primary">Submit</button>
+											</div>
+										</div> <!--// .signup-box -->
+									</div> <!--// .signup-containts-area-inner -->
+								</div> <!--// .signup-containts-area -->
+							</div> <!--// #recover -->
+						</li>
+					</ul> <!--// .slides -->
+				</div> <!--// .flexslider -->
+			</aside>
+			<div id="item-list" class="bg-img hide">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
+							<div class="itemlist-property">
+								<figure>
+									<img src="images/spicesjar.jpg" alt="Daily UI #001 Sign Up" class="img-responsive">
+								</figure>
+								<div class="itemlist-property-innter">
+									<h3><a href="#">Spice Jars</a></h3>
+									<div class="price-status">
+										<span class="price">$23 <span class="per">for set of 12</span></span>
+									</div>
+									<p>These classic jars will add a touch of rustic charm to any spice rack, kitchen counter, or wall shelf. We especially love the dark black labels for a bit of chic contrast.</p>
+								</div>
+								<p class="itemlist-property-specification">
+									<span>Dimensions: <strong>14 x 6.1 x 5.9</strong> inches</span>
+									<span>Weight: <strong>4.6</strong> pounds</span>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
+							<div class="itemlist-property">
+								<figure>
+									<img src="images/cuttingboard.jpg" alt="Daily UI #001 Sign Up" class="img-responsive">
+								</figure>
+								<div class="itemlist-property-innter">
+									<h3><a href="#">Wood Cutting Board</a></h3>
+									<div class="price-status">
+										<span class="price">$60</span>
+									</div>
+									<p>It might have lost out in popularity recently with the rise of bamboo and plastic alternatives, but a 100 percent wood board is a kitchen must-have.This is made of maple hardwood. </p>
+								</div>
+								<p class="itemlist-property-specification">
+									<span>Dimensions: <strong>20 x 15 x 1.2</strong> inches</span>
+									<span>Weight: <strong>9</strong> pounds</span>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
+							<div class="itemlist-property">
+								<figure>
+									<img src="images/pepperspoon.jpg" alt="Daily UI #001 Sign Up" class="img-responsive" style="object-position: 0 23%;">
+								</figure>
+								<div class="itemlist-property-innter">
+									<h3><a href="#">Unfinished Wooden Scoop</a></h3>
+									<div class="price-status">
+										<span class="price">$20 <span class="per">bag of 50</span></span>
+									</div>
+									<p>Good for scooping bath salts, candy, spices or tied to jars as party favors at weddings, baby showers and birthday parties. Also good to decorate and tie them to homemade gift jars.</p>
+								</div>
+								<p class="itemlist-property-specification">
+									<span>Dimensions: <strong>7 x 4 x 2</strong> inches</span>
+									<span>Weight: <strong>3.2</strong> pounds</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<footer id="signup-footer" role="contentinfo">
+				<div class="col-md-12 signup-copyright text-center">
+					<div><span>Designed with <i class="fa fa-heart"></i> by Aya, 2017</span></div>	
+				</div> <!--// .signup-copyright -->
+			</footer>
+		</div> <!--// .signup-page -->
+	
+	
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Flexslider -->
+		<script src="js/jquery.flexslider-min.js"></script>
+
+		<!-- MAIN JS -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
+
